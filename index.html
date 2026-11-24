@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calc — Everyday Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app" aria-label="Calculator">
+    <header><div class="brand"><span class="logo">÷</span> Calc</div><span class="mode">STANDARD</span></header>
+    <section class="display" aria-live="polite" aria-atomic="true">
+      <div class="memory" id="memory"></div><div class="screen" id="screen">0</div>
+    </section>
+    <section class="keys" aria-label="Calculator keys">
+      <button class="utility" data-action="clear">AC</button><button class="utility" data-action="sign">±</button><button class="utility" data-action="percent">%</button><button class="operator" data-op="÷">÷</button>
+      <button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button><button class="operator" data-op="×">×</button>
+      <button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button><button class="operator" data-op="−">−</button>
+      <button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button><button class="operator" data-op="+">+</button>
+      <button class="zero" data-digit="0">0</button><button data-action="decimal">.</button><button class="equals" data-action="equals">=</button>
+    </section>
+    <footer>Keyboard ready · Esc to clear · Enter to calculate</footer>
+  </main>
+</body>
+</html>
